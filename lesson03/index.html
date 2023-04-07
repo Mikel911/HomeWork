@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homework_3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style-type: none;
+        }
+
+        .container {
+            width: 1124px;
+            margin: 0 auto;
+        }
+
+        .header {
+            display: flex;
+        }
+
+        .header__logo {
+            display: block;
+            margin-top: 10px;
+            margin-left: 10px;
+        }
+
+        .header__nav {
+            margin: 25px auto;
+        }
+
+        .header__list {
+            display: flex;
+            margin: 15px;
+        }
+
+        .header__item {
+            margin: 15px;
+        }
+
+        .header__link:hover {
+            color: pink;
+        }
+
+        .first-screen {
+            height: 100vh;
+        }
+
+        .first-screen__title {
+            text-align: center;
+            margin: 25px auto;
+        }
+
+        .first-screen__img {
+            display: block;
+            margin: 25px auto;
+        }
+
+
+        .about-me__img {
+            width: 500px;
+        }
+
+        .title {
+            text-align: center;
+            margin: 20px auto;
+        }
+
+        .about-me__content {
+            display: flex;
+            justify-content: center;
+            margin: 25px;
+        }
+
+        .about-me__content:nth-child(3) {
+            flex-direction: row-reverse;
+        }
+
+        .about-me__content-title {
+            text-align: center;
+        }
+
+        .about-me__text {
+            text-align: center;
+            margin: 25px;
+            width: 350px;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .footer_nav {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .footer__link {
+            display: block;
+        }
+
+        .footer__mail {
+            display: block;
+            margin: 25px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <header">
+            <div class="container header">
+                <a href="#"><img src="./img/svg-1.svg" alt="" class="header__logo"></a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="#firstsection" class="header__link">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#aboutme" class="header__link">
+                                About me
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#footer" class="header__link">
+                                Contacts
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            </header>
+            <main>
+                <section class="first-screen" id="firstsection">
+                    <div class="container">
+                        <h1 class="first-screen__title">
+                            Hi, it's me!
+                        </h1>
+                        <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_960_720.jpg" alt="img"
+                            class="first-screen__img">
+                    </div>
+                </section>
+                <section class="about-me" id="aboutme">
+                    <div class="container">
+                        <h2 class="about-me__title title">
+                            About me
+                        </h2>
+                        <div class="about-me__content">
+                            <img src="https://cdn.pixabay.com/photo/2014/12/16/22/25/woman-570883_960_720.jpg" alt=""
+                                class="about-me__img">
+                            <div class="about-me__content-info">
+                                <h3 class="about-me__content-title">
+                                    Title
+                                </h3>
+                                <p class="about-me__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Non iure distinctio itaque
+                                    illo qui eos placeat, et voluptatem fugit reprehenderit optio voluptatibus
+                                    cupiditate unde nisi architecto consequuntur facere suscipit cum dolorem voluptate
+                                    veritatis! Nemo atque ut suscipit iure sit optio facere dolore perferendis ipsum
+                                    officia error molestiae, quibusdam praesentium odit?
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-me__content">
+                            <img src="https://cdn.pixabay.com/photo/2014/12/16/22/25/sunset-570881_960_720.jpg" alt=""
+                                class="about-me__img">
+                            <div class="about-me__content-info">
+                                <h3 class="about-me__content-title">
+                                    Title
+                                </h3>
+                                <p class="about-me__text">
+                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis dolor,
+                                    accusantium ipsum sed esse expedita alias libero doloremque quidem. Aliquam laborum
+                                    beatae harum labore dicta ullam. Ducimus possimus inventore, modi dicta sit libero
+                                    in ut aperiam porro rerum obcaecati nostrum repellat illum voluptatem perspiciatis.
+                                    Laborum quis labore enim libero in!
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-me__content">
+                            <img src="https://images.unsplash.com/photo-1508919801845-fc2ae1bc2a28?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1511&q=80"
+                                alt="" class="about-me__img">
+                            <div class="about-me__content-info">
+                                <h3 class="about-me__content-title">
+                                    Title
+                                </h3>
+                                <p class="about-me__text">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam doloribus ullam
+                                    perferendis esse ducimus fugiat iure provident soluta quod magni? Harum, itaque
+                                    dicta, labore at inventore, velit sapiente incidunt dolores quae asperiores possimus
+                                    unde. Impedit, accusamus temporibus voluptas minus sunt rerum deleniti sit
+                                    repudiandae est veritatis veniam doloremque sequi incidunt!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="section-map">
+                    <div class="container">
+                        <h2 class="Section__map title"> Find me Here</h2>
+                        <div class="section-map__iframe">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32787.062721284274!2d4.88456333132642!3d52.35386286061474!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609eec1bb16e5%3A0xd54373ae6a408585!2z0KDQtdC50LrRgdC80YPQt9C10Lk!5e0!3m2!1sru!2spl!4v1680910937404!5m2!1sru!2spl"
+                                width="500" height="650" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade" class="section-map__nav"></iframe>
+                            <iframe src="https://mykhailo.netlify.app/" frameborder="0" width="500"
+                                height="650"></iframe>
+                        </div>
+                    </div>
+                </section>
+                <footer class="footer" id="footer">
+                    <div class="container">
+                        <ul class="footer_nav">
+                            <a href="#" class="footer__link">
+                                Terms Of Service
+                            </a>
+                            <a href="#firstsection" class="footer__link">
+                                Privacy Policy
+                            </a>
+                            <a href="#aboutme" class="footer__link">
+                                Social Media Policy
+                            </a>
+                            <a href="#" class="footer__link">
+                                Returns & Refunds
+                            </a>
+                            <a href="#" class="footer__link">
+                                User Safety
+                            </a>
+                        </ul>
+                        <a href="mailto:ilchukmike@gmail.com" class="footer__mail">Email:ilchukmike@gmail.com</a>
+                    </div>
+                </footer>
+            </main>
+    </div>
+</body>
+
+</html>
