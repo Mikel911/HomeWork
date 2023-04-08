@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+body {
+    color: #070707;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.container {
+    width: 1124px;
+    margin: 0 auto;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.header__iteam {
+    margin: 28px 20px;
+}
+
+.header__link {
+    color: #828282;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+}
+
+.header__link:hover {
+    color: #070707;
+    font-weight: bold;
+    transition: 0.3s all ease;
+    font-size: 19px;
+}
+
+.header__btborder {
+    border: 1px solid #828282;
+}
+
+.about-me {
+    padding: 100px 0;
+}
+
+.firstsection__title {
+    font-size: 48px;
+    margin-top: 12px;
+}
+
+.firstsection__img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.about-me {
+    background: #F6F6F6;
+}
+
+.title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.about-me__text {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.skills__title {
+    padding-top: 100px;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.skills__iteam {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+}
+
+.skills__col {}
+
+.skills__img {
+    display: block;
+    margin: auto;
+}
+
+.skills__descr {
+    margin: 25px auto 60px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #828282;
+    letter-spacing: 0.02em;
+}
+
+.skill__ratingbar {}
+
+.skills__rating {}
+
+. .skills__ratingimg {}
+
+.portfolio {
+    background: #F6F6F6;
+
+}
+
+.portfolio__title {
+    padding-top: 100px;
+}
+
+.portfolio__img {
+    width: 100%;
+    margin-top: 50px;
+}
+
+.portfolio__link {
+    display: block;
+    margin: 40px auto 70px;
+    text-align: center;
+    width: 200px;
+    color: #070707;
+}
+
+.footer__subtitle {
+    width: 280px;
+    margin: 0 auto;
+}
+
+.footer__btn {
+    display: block;
+    background: #070707;
+    border-radius: 22px;
+    width: 180px;
+    padding: 10px 18px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: bold;
+    margin: 70px auto 40px;
+}
+
+.footer__social {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.footer__like {
+    margin: 60px auto;
+    font-size: 14px;
+    color: #828282;
+    width: 200px;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 1124px) {
+    .container {
+        width: 768px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .container {
+        width: 680px;
+    }
+
+    .skills__iteam {
+        display: block;
+    }
+
+    .skill__ratingbar {
+        width: 160px;
+        margin: 20px auto;
+    }
+
+    .skills__descr {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    body {
+        background-color: #F6F6F6;
+    }
+
+}
