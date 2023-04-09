@@ -37,7 +37,6 @@ body {
     color: #070707;
     font-weight: bold;
     transition: 0.3s all ease;
-    font-size: 19px;
 }
 
 .header__btborder {
@@ -83,7 +82,7 @@ body {
 }
 
 .skills__iteam {
-    margin-top: 50px;
+    margin: 50px auto 100px;
     display: flex;
     justify-content: center;
     gap: 45px;
@@ -113,11 +112,12 @@ body {
 
 .portfolio {
     background: #F6F6F6;
-
+    padding-top: 100px;
+    padding-bottom: 80px;
 }
 
 .portfolio__title {
-    padding-top: 100px;
+    margin-bottom: 0px;
 }
 
 .portfolio__img {
@@ -127,10 +127,15 @@ body {
 
 .portfolio__link {
     display: block;
-    margin: 40px auto 70px;
+    margin: 40px auto 20px;
     text-align: center;
     width: 200px;
     color: #070707;
+    text-decoration: underline;
+}
+
+.footer {
+    padding-top: 100px;
 }
 
 .footer__subtitle {
