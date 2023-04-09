@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/sing-in.css">
+    <title>Form</title>
+</head>
+
+<body>
+    <heade class="header">
+        <div class="container">
+            <h1 class="header__titel">
+                Домашнє завдання з уроку Form
+            </h1>
+        </div>
+    </heade>
+    <main>
+        <section class="sing-in">
+            <div class="container">
+                <div class="sing-in__form">
+                    <h2 class="sing-in__subtitle">Будь ласка, заповніть дані</h2>
+                    <form action="get">
+                        <div class="form-field">
+                            <label for="fullname">
+                                Повне ім’я
+                            </label>
+                            <input type="text" id="fullname" size="25">
+                        </div>
+                        <div class="form-field">
+                            <label for="email">
+                                Email
+                            </label>
+                            <input type="email" id="email" size="25">
+                        </div>
+                        <div class="form-field">
+                            <label for="pass">
+                                Пароль
+                            </label>
+                            <input type="password" name="password" id="pass" size="25">
+                        </div>
+                        <div class="form-field">
+                            <label for="passagain">
+                                Пароль ще раз
+                            </label>
+                            <input type="password" name="password" id="passagain" size="25">
+                        </div>
+                        <div class="form-field">
+                            <label for="sex">
+                                Стать
+                            </label>
+                            <input type="radio" id="male" name="sex">
+                            <label for="male">
+                                Чоловіча
+                            </label>
+                            <input type="radio" id="female" name="sex">
+                            <label for="female">
+                                Жіноча
+                            </label>
+
+                        </div>
+                        <div class="form-field">
+                            <label for="old">
+                                Вік
+                            </label>
+                            <input type="date" name="old" id="old" required size="25">
+                        </div>
+                        <div class="form-field">
+                            <label for="rate">
+                                Курс
+                            </label>
+                            <select name="rate" id="rate">
+                                <option>Front-End</option>
+                                <option>Back-End</option>
+                                <option>Project Management</option>
+                                <option>QA Manual</option>
+                            </select>
+                        </div>
+                        <div class="form-field">
+                            <label for="adres">
+                                Повна адреса проживання
+                            </label>
+                            <textarea type="text" name="adres" id="adres"
+                                placeholder="Країна, регіон, місто/селище, вулиця" rows="3" cols="33"></textarea>
+                        </div>
+                        <div class="form-field">
+                            <input type="checkbox" name="accept" id="accept" required>
+                            <label for="accept">
+                                Я погоджуюсь з обробкою персональних даних
+                            </label>
+                        </div>
+                    </form>
+                    <div class="sing-in__btn">
+                        <a href="./sing-in.html" class="sing-in__refbtn">
+                            Очистити форму
+                        </a>
+                        <button class="sing-reg">
+                            Зареєструватися
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
