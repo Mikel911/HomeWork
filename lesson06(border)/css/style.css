@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .container {
@@ -13,28 +14,34 @@
     background-color: blue;
     margin: 20px auto;
 }
+
 .box2 {
     background-color: red;
     padding: 20px;
     margin: 20px auto;
 }
+
 .box2__inside {
     height: 50px;
     background-color: #63E18E;
 }
+
 .box3 {
     margin: 20px auto;
     background: #C66161;
     height: 100px;
 }
+
 .box4 {
     background: #C66161;
     padding: 10px;
 }
+
 .box2__inside1 {
     background: #000000;
     padding: 10px;
 }
+
 .box4__inside2 {
     background: #2DB743;
     height: 50px;

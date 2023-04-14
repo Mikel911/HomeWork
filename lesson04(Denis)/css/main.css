@@ -2,9 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+a {
     text-decoration: none;
     list-style-type: none;
 }
+
 
 body {
     color: #070707;
@@ -105,19 +109,21 @@ body {
     letter-spacing: 0.02em;
 }
 
-.skill__ratingbar {}
+.skill__ratingbar {
+    display: flex;
+}
 
 .skills__rating {}
 
-. .skills__ratingimg {}
+.skills__ratingimg {
+    display: block;
+}
 
 .portfolio {
     background: #F6F6F6;
 }
 
-.portfolio__title {
-    margin-top: 100px;
-}
+.portfolio__title {}
 
 .portfolio__img {
     display: block;
@@ -191,6 +197,10 @@ body {
 
     .skills__descr {
         margin-bottom: 20px;
+    }
+
+    .portfolio__img {
+        width: 100%;
     }
 }
 
