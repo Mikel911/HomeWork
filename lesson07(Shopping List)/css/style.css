@@ -109,3 +109,12 @@ li {
     margin-top: 5px;
     font-size: 11px;
 }
+
+
+.shopping-list__text-info:before {
+    content: "(";
+}
+
+.shopping-list__text-info:after {
+    content: ")";
+}
