@@ -83,7 +83,6 @@ a {
 /* header end */
 
 /* weather section */
-.weather {}
 
 .weather__content {
     border: 1px solid var(--color-white);
