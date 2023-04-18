@@ -106,7 +106,7 @@ li {
 
 .shopping-list__text-info {
     display: block;
-    margin-top: 5px;
+    padding-top: 5px;
     font-size: 11px;
 }
 

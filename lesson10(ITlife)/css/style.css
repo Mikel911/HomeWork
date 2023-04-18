@@ -1,0 +1,183 @@
+/* reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* reset end */
+
+/* variable */
+
+:root {
+    /*colors*/
+    --colot-lightgrey: #F6F6F6;
+    --color-darkgrey: #3C3C3C;
+    --color-grey: #DDDBDB;
+    --color-brown: #282528;
+    --color-lightbrown: #646464;
+    /*font*/
+    --font-Lato: 'Lato';
+}
+
+/* variable end */
+
+/* general style */
+.container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+.wrapper {
+    font-family: var(--font-Lato);
+}
+
+/* general style end */
+
+
+/* header */
+.header {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__logo {}
+
+.havbar {
+    align-self: center;
+}
+
+.header__nav {
+    display: flex;
+}
+
+.header__item {
+    margin-right: 30px;
+}
+
+.header__item:last-child {
+    margin-right: 0;
+}
+
+.header__link {
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.callback {
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--color-darkgrey);
+    border: 1px solid var(--color-darkgrey);
+    align-self: center;
+}
+
+/*header end */
+
+/* section about */
+.about {
+    padding: 150px 0;
+    background-color: var(--colot-lightgrey);
+}
+
+.about__title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 41px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--color-darkgrey);
+}
+
+.border {
+    border: 2px solid var(--color-grey);
+    max-width: 45px;
+    margin: 20px auto 40px;
+}
+
+.about__subtitle {
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+    opacity: 75%;
+    color: var(--color-darkgrey);
+}
+
+.about__team-item {
+    display: flex;
+    margin-top: 60px;
+}
+
+.about__team-item__card {
+    margin-right: 30px;
+}
+
+.about__team-item__card:last-child {
+    margin-right: 0;
+}
+
+.about__team-item__photo {}
+
+.about__team-item__title {
+    padding-top: 20px;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: var(--color-brown);
+}
+
+.about__team-item__subtitle {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: var(--color-lightbrown);
+}
+
+/* section about end */
+
+
+/* footer */
+.footert {
+    padding: 40px 0;
+}
+
+.footert .container {
+    max-width: 330px;
+}
+
+.footer__logo {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 25px;
+}
+
+.footer__socialnavbar {
+    display: flex;
+    justify-content: center;
+
+
+
+}
+
+
+.footer__socialnavbar__item {
+    border: 1px solid #18B5DC;
+    margin: 25px 10px 0 0;
+    padding: 10px;
+}
+
+
+.footer_socialnavbar__link {}
+
+/* footer end */
