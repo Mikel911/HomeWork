@@ -50,19 +50,24 @@ section:nth-child(2n) {
     background-color: var(--color-lightgrey);
 }
 
+.title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
 /* Global style end */
 
 
 /* header */
 
+.header {}
+
 .header__nav {
     display: flex;
     justify-content: center;
-}
-
-.header__iteam {
-    margin: 28px 20px;
-
+    gap: 40px;
+    margin: 28px 0;
 }
 
 .header__link {
@@ -84,13 +89,17 @@ section:nth-child(2n) {
 
 /* firstsection */
 
+.firstsection {
+    padding-top: 12px;
+}
+
 .firstsection__title {
     font-size: 48px;
-    margin: 12px 0 50px;
 }
 
 .firstsection__img {
     max-width: 100%;
+    margin-top: 50px;
     display: block;
 }
 
@@ -106,15 +115,15 @@ section:nth-child(2n) {
     max-width: 500px;
 }
 
-.about-me__title {
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 50px;
-}
+.about-me__title {}
 
 .about-me__text {
-    margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
+}
+
+.about-me__text:last-child {
+    margin-bottom: 0;
 }
 
 /* about-me section end */
@@ -126,8 +135,6 @@ section:nth-child(2n) {
 }
 
 .skills__title {
-    text-align: center;
-    font-size: 34px;
     margin-bottom: 20px;
 }
 
@@ -136,13 +143,27 @@ section:nth-child(2n) {
     margin-bottom: 50px;
 }
 
-.skills__iteam {
+.skills__box {
     display: flex;
     justify-content: space-between;
+    gap: 95px;
 }
 
-.skills__img {
-    display: block;
+.skills__iteam {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.skills__descr {
+    margin-top: 25px;
+}
+
+.skills__box-stars {
+    margin-top: 60px;
+    display: flex;
+    gap: 10px;
 }
 
 /* skills section end*/
@@ -151,12 +172,6 @@ section:nth-child(2n) {
 
 .portfolio {
     padding: 100px 0;
-}
-
-.portfolio__title {
-    text-align: center;
-    font-size: 34px;
-    margin-bottom: 50px;
 }
 
 .portfolio__content {
@@ -169,6 +184,7 @@ section:nth-child(2n) {
 
 .portfolio__img {
     max-width: 100%;
+    display: block;
 }
 
 .portfolio__link {
@@ -189,10 +205,6 @@ section:nth-child(2n) {
 
 .footer .container {
     max-width: 300px;
-}
-
-.footer__title {
-    text-align: center;
 }
 
 .footer__subtitle {
@@ -223,7 +235,7 @@ section:nth-child(2n) {
 }
 
 .footer__like {
-    margin: 60px auto;
+    margin: 60px auto 0;
     font-size: 14px;
     color: var(--color-grey);
     text-align: center;
