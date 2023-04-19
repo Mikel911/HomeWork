@@ -61,10 +61,7 @@ a {
 
 .header__nav {
     display: flex;
-}
-
-.header__item {
-    margin-right: 30px;
+    gap: 30px;
 }
 
 .header__link:hover {
@@ -130,15 +127,8 @@ a {
 
 .about__team-item {
     display: flex;
+    gap: 30px;
     margin-top: 60px;
-}
-
-.about__team-item__card {
-    margin-right: 30px;
-}
-
-.about__team-item__card:last-child {
-    margin-right: 0;
 }
 
 .about__team__photo {
@@ -211,16 +201,12 @@ a {
 .footer__socialnavbar {
     display: flex;
     justify-content: center;
+    gap: 10px;
 }
 
 
 .footer__socialnavbar__item {
     margin-top: 25px;
-    margin-right: 10px;
-}
-
-.footer__socialnavbar__item:last-of-type {
-    margin-right: 0;
 }
 
 
