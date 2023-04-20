@@ -76,6 +76,7 @@ a {
 .header__link {
     text-transform: uppercase;
     font-size: 20px;
+    color: var(--color-darkgrey);
 }
 
 .callback {
@@ -97,6 +98,8 @@ a {
 /*header end */
 
 /* section about */
+
+
 .about {
     padding: 150px 0;
     background-color: var(--colot-lightgrey);
@@ -144,25 +147,18 @@ a {
     background-color: var(--color-lightblue);
     display: flex;
     flex-direction: row;
+    gap: 4px;
     justify-content: center;
     align-items: center;
-    opacity: 0;
+    visibility: hidden;
 }
-
-.about__team-item__contact a {
-    margin-right: 4px;
-    display: block;
-    background: var(--color-lightblue);
-}
-
-
-.about__team__photo:hover .about__team-item__contact {
-    opacity: 1;
-}
-
 
 .about__team-item__contact__link {
-    margin-right: 5px;
+    display: block;
+}
+
+.about__team__photo:hover .about__team-item__contact {
+    visibility: visible;;
 }
 
 .about__team-item__title {
