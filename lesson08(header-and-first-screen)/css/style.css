@@ -1,17 +1,11 @@
-/* reset */
+/* font-family: 'Montserrat', sans-serif; */
+
+/* Reset */
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
 }
 
 button {
@@ -21,8 +15,23 @@ button {
     display: block;
 }
 
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
 img {
+    width: 100%;
     display: block;
+}
+
+input {
+    padding: 0;
+    margin: 0;
+    border: 0;
 }
 
 
@@ -44,6 +53,20 @@ img {
     --color-lightbrown: #544837;
     --color-hover: #bb7916;
 
+
+    /* font-weight: 600; font-size: 16px;/line-height: 20px; font-family:*/
+    --title-fonts: 700 44px/54px var(--main-fonts);
+    --hero-text-fonts: 400 18px/28px var(--main-fonts);
+    --text-fonts: 500 16px/26px var(--main-fonts);
+    --btn-fonts: 600 16px/20px var(--main-fonts);
+    --link-fonts: 400 15px/20px var(--main-fonts);
+    --link-nav-fonts: 400 16px/28px var(--main-fonts);
+    --text-tools-name: 600 22px/27px var(--main-fonts);
+    --title-section-fonts: 700 36px/44px var(--main-fonts);
+    --text-card-fonts: 500 16px/26px var(--main-fonts);
+    --subtitle-card-fonts: 700 16px/26px var(--main-fonts);
+    --title-footer-fonts: 700 20px/30px var(--main-fonts);
+    --text-input-font: 400 16px/20px var(--main-fonts);
 }
 
 /* variable end */
@@ -59,13 +82,21 @@ img {
 
 body {
     font-family: var(--main-fonts);
+    color: var(--color-lightbrown);
+}
+
+.title {
+    font: var(--title-fonts);
+    color: var(--color-black);
+}
+
+.section-title {
+    font: var(--title-section-fonts);
+    color: var(--color-black);
 }
 
 
 /* general style end */
-
-
-
 
 /* header */
 
@@ -79,24 +110,19 @@ body {
     align-items: center;
 }
 
-.header__logo {
+.logo {
     width: 200px;
 }
-
-.header__nav {}
 
 .header__nav-container {
     display: flex;
     gap: 20px;
     justify-content: center;
-    align-items: center;
 }
 
 .header__link {
     color: var(--color-black);
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 28px;
+    font: var(--link-nav-fonts);
 }
 
 .header__link:hover {
@@ -110,9 +136,7 @@ body {
 
 .btn {
     padding: 13px 22px;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 20px;
+    font: var(--btn-fonts);
     color: var(--color-white);
     background-color: var(--color-orange);
     border-radius: 4px;
@@ -139,49 +163,42 @@ body {
 
 /* header end */
 
-/* section hero */
-
-.hero {
-    padding: 70px 0 0;
-}
-
-.hero__content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 56px;
-}
-
-.hero__discr {}
-
+/* Hero */
 .hero__title {
-    font-weight: 700;
-    font-size: 44px;
-    line-height: 54px;
+    margin-bottom: 30px;
+    max-width: 500px;
 }
 
 .hero__text {
-    margin-top: 30px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 28px;
+    margin-bottom: 20px;
+    max-width: 500px;
+    font: var(--hero-text-fonts);
 }
 
-.hero__btn {
-    margin-top: 20px;
-    padding: 13px 43px;
+.hero__img {
+    max-width: 644px;
+    position: absolute;
+    width: 54%;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.hero__container {
+    position: relative;
+    padding: 167px 10px 196px;
 }
 
 
-.hero__img {}
 
-/* section hero end */
+/* Hero End */
 
 
 /* section tools */
 
 .tools {
-    padding: 100px 0 70px;
+    padding-bottom: 70px;
     background-image: url(../img/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -189,11 +206,9 @@ body {
 }
 
 .tools__title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 44px;
     text-align: center;
-
+    max-width: 540px;
+    margin: 0 auto;
 }
 
 .tools__content {
@@ -208,23 +223,17 @@ body {
     max-width: 270px;
 }
 
-.tools__img {}
+.tools__img {
+    width: 50px;
+    margin-bottom: 30px;
+}
 
 .tools_name {
-    margin-top: 30px;
-    font-weight: 600;
-    font-size: 22px;
-    line-height: 27px;
+    font: var(--text-tools-name);
     color: var(--color-black);
+    margin-bottom: 16px;
 }
 
-.tools__text {
-    margin-top: 16px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    color: var(--color-lightbrown);
-}
 
 .tools__btn {
     margin: 70px auto 0;
@@ -233,9 +242,54 @@ body {
 
 /* section tools end */
 
+/* section product */
+
+
+.product {
+    padding: 100px 0;
+}
+
+.product__row {
+    position: relative;
+}
+
+.card__before-title {
+    display: block;
+    font: var(--text-card-fonts);
+}
+
+.card {
+    max-width: 525px;
+}
+
+.card__title {
+    margin-bottom: 20px;
+}
+
+.card__subtitle {
+    font: var(--subtitle-card-fonts);
+    margin-bottom: 10px;
+}
+
+.card__description {
+    font: var(--text-card-fonts);
+    margin-bottom: 30px;
+}
+
+.card__img {
+    max-width: 562px;
+    width: 48%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+
+/* section product end*/
 
 /* footer */
-
 .footer {
     padding: 70px 0;
 }
@@ -246,57 +300,41 @@ body {
     justify-content: space-between;
 }
 
-.header__logo {}
-
+.footer__nav-title {
+    margin-bottom: 30px;
+    font: var(--title-footer-fonts);
+}
 
 .footer__nav-container {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-.footer__title {
-    margin-bottom: 30px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 30px;
-    color: var(--color-black);
-}
-
-.footer__link {
-    margin-top: 15px;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
+.footer__nav-link {
     color: var(--color-lightbrown);
 }
 
-.footer__link:first-child {
-    margin-top: 0;
-}
-
 .footer__fieldset {
-    width: 25%;
+    max-width: 340px;
 }
 
-.footer__form {
+.footer__form-title {
+    color: var(--color-black);
+    font: var(--title-footer-fonts);
+}
+
+.footer__input {
     margin: 25px 0;
     padding: 15px 0 15px 10px;
-    display: block;
     width: 100%;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 20px;
+    font: var(--text-input-font);
     border-radius: 4px;
-
+    border: 2px solid var(--color-powder-blue);
 }
 
-.footer__form::placeholder {
-    color: var(--color-powder-blue);
-}
-
-.footer__form:hover {
-    background-color: transparent;
-    border-color: var(--color-black);
+.footer__input:hover {
+    border-color: var(--color-hover);
 }
 
 .footer__btn {
