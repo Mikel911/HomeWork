@@ -1,0 +1,147 @@
+/* font-family: 'Roboto', sans-serif; */
+
+/*Reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/*Reset end*/
+
+/*Variable*/
+
+:root {
+    /*fonts*/
+    --main-fonts: font-family: 'Roboto';
+
+    /*colors*/
+    --color-black: #000000;
+    --color-gray: #E6E6E6;
+
+
+    --text-breadcrumg-fonts: 400 22px/28px var(--breadcrumb-fonts);
+}
+
+/*Variable end*/
+
+/*General style*/
+body {
+    font-family: var(--main-fonts);
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+/*General style end*/
+
+/*header*/
+.header__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__language-container {}
+
+.language {}
+
+.breadcrumb-container {}
+
+ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+.breadcrumb {
+    display: flex;
+
+}
+
+.breadcrumb__iteam {
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+}
+
+.logo {
+    width: 238px;
+}
+
+/*header end*/
+
+/*hero section*/
+.hero {
+    padding: 70px 0;
+
+}
+
+
+
+.hero__title {
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    font-family: 'Roboto';
+}
+
+.hero__content {
+    padding: 20px 0;
+    border-top: 2px solid var(--color-gray);
+    border-bottom: 2px solid var(--color-gray);
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.hero__card {
+    position: relative;
+
+}
+
+.hero__card-img-before {
+    max-width: 270px;
+}
+
+.hero__card-img-after {
+    position: absolute;
+    transform: rotateX(180deg);
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+
+.hero__card:hover .hero__card-img-after {
+    opacity: 1;
+    transform: rotateX(360deg);
+    transition: all 1s;
+}
+
+.hero__card:hover .hero__card-img-before {
+    visibility: hidden;
+}
+
+
+
+/*hero secrion end*/
