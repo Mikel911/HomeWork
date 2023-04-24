@@ -110,9 +110,23 @@ ul.breadcrumb li+li:before {
     padding: 70px 0;
 }
 
+.hero__title-container {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
 .hero__title {
     font: var(--title-fonts);
 }
+
+.hero__title-border {
+    width: 100px;
+    height: 8px;
+    background-color: var(--color-black);
+}
+
 
 .hero__content {
     padding: 20px 0;
