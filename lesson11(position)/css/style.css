@@ -22,9 +22,7 @@ img {
     width: 100%;
 }
 
-/*Reset end*/
 
-/*Variable*/
 
 :root {
     /*fonts*/
@@ -150,19 +148,14 @@ ul.breadcrumb li+li:before {
     transform: rotateX(260deg);
     top: 0;
     left: 0;
-    opacity: 0;
+    visibility: hidden;
 }
 
 .hero__card:hover .hero__card-img-after {
-    opacity: 1;
+    visibility: visible;
     transform: rotateX(360deg);
     transition: all 1s;
 }
-
-.hero__card:hover .hero__card-img-before {
-    opacity: 0;
-}
-
 
 
 /*hero secrion end*/
