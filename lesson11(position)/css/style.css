@@ -28,7 +28,8 @@ img {
 
 :root {
     /*fonts*/
-    --main-fonts: font-family: 'Roboto';
+    --main-fonts: 'Roboto';
+    --breadcrumb-fonts: 'Staatliches';
 
     /*colors*/
     --color-black: #000000;
@@ -36,6 +37,7 @@ img {
 
 
     --text-breadcrumg-fonts: 400 22px/28px var(--breadcrumb-fonts);
+    --title-fonts: 600 36px/48px var(--main-fonts);
 }
 
 /*Variable end*/
@@ -53,18 +55,22 @@ body {
 
 /*General style end*/
 
-/*header*/
-.header__row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+/*language*/
+
+.language select {
+    border: none;
+    font-size: 22px;
+    line-height: 18px;
 }
 
-.header__language-container {}
+/*language end*/
 
-.language {}
+/*breadcrumb*/
 
-.breadcrumb-container {}
+.breadcrumb-container {
+    width: 70%;
+}
 
 ul.breadcrumb li+li:before {
     padding: 8px;
@@ -74,15 +80,23 @@ ul.breadcrumb li+li:before {
 
 .breadcrumb {
     display: flex;
-
 }
 
 .breadcrumb__iteam {
-    font-family: 'Staatliches';
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 28px;
+    font: var(--text-breadcrumg-fonts);
     letter-spacing: 0.03em;
+}
+
+/*breadcrumb end*/
+
+
+
+/*header*/
+.header__row {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo {
@@ -94,16 +108,10 @@ ul.breadcrumb li+li:before {
 /*hero section*/
 .hero {
     padding: 70px 0;
-
 }
 
-
-
 .hero__title {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 48px;
-    font-family: 'Roboto';
+    font: var(--title-fonts);
 }
 
 .hero__content {
@@ -111,13 +119,12 @@ ul.breadcrumb li+li:before {
     border-top: 2px solid var(--color-gray);
     border-bottom: 2px solid var(--color-gray);
     display: flex;
-    gap: 30px;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 .hero__card {
     position: relative;
-
 }
 
 .hero__card-img-before {
@@ -126,7 +133,7 @@ ul.breadcrumb li+li:before {
 
 .hero__card-img-after {
     position: absolute;
-    transform: rotateX(180deg);
+    transform: rotateX(260deg);
     top: 0;
     left: 0;
     opacity: 0;
@@ -139,7 +146,7 @@ ul.breadcrumb li+li:before {
 }
 
 .hero__card:hover .hero__card-img-before {
-    visibility: hidden;
+    opacity: 0;
 }
 
 
