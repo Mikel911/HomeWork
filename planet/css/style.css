@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.wrapper {
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.content {
+    display: flex;
+}
+
+.text {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.img {
+    width: 70%;
+    position: relative;
+    height: 100vh;
+}
+
+.planet {
+    position: absolute;
+    max-width: 1500px;
+    bottom: -100px;
+    right: -200px;
+}
+
+.first {
+    position: absolute;
+    max-width: 200px;
+    bottom: 50px;
+    transform: rotate(260deg);
+}
+
+.second {
+    position: absolute;
+    max-width: 200px;
+    top: 120px;
+    transform: rotate(143deg);
+}
+
+.thirty {
+    position: absolute;
+    max-width: 200px;
+    top: 300px;
+    left: 140px;
+    transform: rotate(90deg);
+}
+
+.coursor {
+    position: absolute;
+    max-width: 130px;
+    bottom: 200px;
+    right: 230px;
+}

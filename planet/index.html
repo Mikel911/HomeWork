@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="content">
+                <div class="text">
+                    <h1 class="title">Lorem, ipsum</h1>
+                    <p>Lorem ipsum dolor</p>
+                    <button class="btn">
+                        start
+                    </button>
+                </div>
+
+                <div class="img">
+                    <img src="./img/planet.png" data-speed="0.1" alt="" width="100" class="planet box">
+                    <img src="./img/doodle-5 6.png" data-speed="0.5" alt="" width="100" class="first box">
+                    <img src="./img/doodle-5 6.png" data-speed="0.5" alt="" width="100" class="second box">
+                    <img src="./img/doodle-5 6.png" data-speed="0.5" alt="" width="100" class="thirty box">
+                    <img src="./img/cursor.png" alt="" data-speed="0.2" width="100" class="coursor box">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        let wrap = document.querySelector('.content')
+
+        let speed = 0;
+
+        function paralax(event) {
+            let height = wrap.offsetHeight / 2;
+            this.querySelectorAll('.box').forEach(par => {
+                speed = par.getAttribute('data-speed')
+                par.style.transform = `translate(${(event.clientX - height) * speed / 10}px, ${(event.clientY - height) * speed / 10}px)`;
+            })
+        }
+
+        wrap.addEventListener("mousemove", paralax)
+
+
+    </script>
+</body>
+
+</html>
