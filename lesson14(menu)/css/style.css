@@ -73,9 +73,7 @@ svg {
     align-items: flex-start;
 }
 
-.sidebar__subtitle {
-    margin-top: 30px;
-}
+
 
 .sidebar__img,
 .sidebar__logo {
@@ -92,10 +90,15 @@ svg {
     visibility: hidden;
 }
 
+.sidebar__subtitle {
+    margin-top: 30px;
+}
+
 .sidebar__name {
     visibility: hidden;
     width: 200px;
     padding: 13px 0;
+    transform: translate(-30px, 0px);
 }
 
 .sidebar__subtitle-text {
@@ -113,6 +116,8 @@ svg {
 
 .sidebar__container:hover .sidebar__name {
     visibility: visible;
+    transform: translate(0px, 0px);
+    transition: all 0.3s;
 }
 
 .sidebar__container:hover .sidebar__title {
@@ -149,6 +154,9 @@ svg {
 .sidebar:hover {
     box-shadow: 24px 2px 54px -16px rgba(66, 68, 90, 1);
 }
+
+
+/*notification*/
 
 .notification-a:after {
     content: "5";
