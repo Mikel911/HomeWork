@@ -31,10 +31,11 @@ svg {
     --color-purple-dark: #392C72;
     --colot-purple-light: #9E8CFC;
     --color-yellow: #F2C94C;
-    --color-red: #F2C94C;
+    --color-red: #EA5455;
     --color-gray-dark: #4F4F4F;
     --color-gray-middle: #828282;
     --color-white: #FFFFFF;
+    --color-green-light: #6FCF97;
 
     /*font*/
     --main-text-font: 400 16px/20px var(--main-fonts);
@@ -100,7 +101,7 @@ svg {
 .sidebar__subtitle-text {
     visibility: hidden;
     color: var(--color-gray-middle);
-
+    text-transform: uppercase;
 }
 
 .sidebar__link {
@@ -147,4 +148,46 @@ svg {
 
 .sidebar:hover {
     box-shadow: 24px 2px 54px -16px rgba(66, 68, 90, 1);
+}
+
+.notification-a:after {
+    content: "5";
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    padding: 2.5px 6px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 12px;
+    background-color: var(--color-green-light);
+    color: var(--color-purple-dark);
+    !important
+}
+
+.notification-b:after {
+    content: "10";
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    padding: 2.5px 6px;
+    font-size: 12px;
+    line-height: 15px;
+    border-radius: 12px;
+    background-color: var(--color-red);
+    color: var(--color-purple-dark);
+    !important
+}
+
+.notification-c:after {
+    content: "15";
+    position: absolute;
+    top: 0px;
+    left: 50px;
+    padding: 2.5px 6px;
+    font-size: 12px;
+    line-height: 15px;
+    background-color: var(--color-yellow);
+    border-radius: 12px;
+    color: var(--color-purple-dark);
+    !important
 }
