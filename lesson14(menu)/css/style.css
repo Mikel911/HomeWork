@@ -1,0 +1,150 @@
+/*font-family: 'Montserrat', sans-serif;*/
+
+/*Reset*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+svg {
+    display: block;
+}
+
+/*Reset end*/
+
+/*Variable*/
+
+:root {
+    /*fonts*/
+    --main-fonts: 'Montserrat', sans-serif;
+    /*colors*/
+    --color-purple-dark: #392C72;
+    --colot-purple-light: #9E8CFC;
+    --color-yellow: #F2C94C;
+    --color-red: #F2C94C;
+    --color-gray-dark: #4F4F4F;
+    --color-gray-middle: #828282;
+    --color-white: #FFFFFF;
+
+    /*font*/
+    --main-text-font: 400 16px/20px var(--main-fonts);
+    --sidebar-title-font: 500 18px/22px var(--main-fonts);
+}
+
+/*Varibale end*/
+
+/*General style*/
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.wrapper {
+    font: var(--main-text-font);
+    color: var(--color-gray-dark);
+}
+
+/*General style end*/
+
+/*Sidebar*/
+
+.sidebar {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.sidebar__container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.sidebar__subtitle {
+    margin-top: 30px;
+}
+
+.sidebar__img,
+.sidebar__logo {
+    width: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sidebar__title {
+    padding: 30px 0;
+    font: var(--sidebar-title-font);
+    color: var(--color-purple-dark);
+    visibility: hidden;
+}
+
+.sidebar__name {
+    visibility: hidden;
+    width: 200px;
+    padding: 13px 0;
+}
+
+.sidebar__subtitle-text {
+    visibility: hidden;
+    color: var(--color-gray-middle);
+
+}
+
+.sidebar__link {
+    display: flex;
+    align-items: center;
+    color: var(--color-gray-dark);
+    position: relative;
+}
+
+.sidebar__container:hover .sidebar__name {
+    visibility: visible;
+}
+
+.sidebar__container:hover .sidebar__title {
+    visibility: visible;
+}
+
+.sidebar__container:hover .sidebar__border {
+    display: none;
+}
+
+.sidebar__container:hover .sidebar__subtitle-text {
+    transform: translate(30px, 0px);
+    transition: all 0.3s;
+    visibility: visible;
+}
+
+.sidebar__item:hover {
+    background-color: var(--colot-purple-light);
+}
+
+.sidebar__item:hover .sidebar__link {
+    color: var(--color-white);
+    cursor: pointer;
+}
+
+.sidebar__item:hover .sidebar__img path {
+    fill: var(--color-white);
+}
+
+.sidebar__container:hover .bg-transparent {
+    background-color: transparent;
+}
+
+.sidebar:hover {
+    box-shadow: 24px 2px 54px -16px rgba(66, 68, 90, 1);
+}
