@@ -1,0 +1,32 @@
+//Buttons
+
+
+.btn {
+    font: $btn-fonts;
+    color: $color-white;
+    background-color: $color-orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12rem 22rem;
+    border-radius: $r-4;
+    border: 1rem solid transparent;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: $color-btn-hover;
+    }
+
+    & .btn--line {
+        color: $color-black;
+        background-color: transparent;
+        border: 1rem solid $color-border;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-orange;
+            border: 1rem solid transparent;
+        }
+    }
+}

@@ -1,0 +1,41 @@
+// General style
+
+html {
+    font-size: 1px;
+}
+
+body {
+    font: $text-fonts;
+    color: $color-black;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1200rem;
+    margin: 0 auto;
+    padding: 0 10rem;
+}
+
+
+.title {
+    font: $title-fonts;
+}
+
+.h2 {
+    font: $sub-title-fonts;
+}
+
+.h3 {
+    font: $h3-fonts;
+}
+
+.simple-text {
+    font: $color-simpl-text;
+}
+
+.fix-body {
+    overflow: hidden;
+}

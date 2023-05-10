@@ -1,0 +1,15 @@
+// Fonts Montserrat
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+
+//Fonts
+$main-fonts: 'Montserrat', sans-serif;
+
+$title-fonts: 700 44rem/54rem $main-fonts;
+$sub-title-fonts: 700 36rem/44rem $main-fonts;
+$h3-fonts: 600 22rem/44rem $main-fonts;
+$simple-text-fonts: 500 16rem/26rem $main-fonts;
+$hero-text-fonts: 400 18rem/28rem $main-fonts;
+$text-fonts: 500 16rem/26rem $main-fonts;
+$btn-fonts: 600 16rem/20rem $main-fonts;
+$link-fonts: 400 15rem/20rem $main-fonts;

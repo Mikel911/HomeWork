@@ -1,0 +1,103 @@
+// Header
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 17rem 0;
+    z-index: 30;
+    width: 100%;
+    background-color: $color-white;
+    box-shadow: -4rem 6rem 17rem -8rem rgba(0, 0, 0, 0.75);
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20rem;
+    }
+
+    &__logo {
+        width: 120rem;
+    }
+
+    &__gamb {
+        width: 40rem;
+        height: 40rem;
+        display: none;
+        position: relative;
+    }
+
+    &__gamb-line {
+        position: absolute;
+        top: 20rem;
+        left: 0;
+        width: 40rem;
+        height: 1rem;
+        background-color: $color-black;
+        transition: transform 0.6s;
+    }
+
+    &__gamb-line--top {
+        top: 10rem;
+    }
+
+    &__gamb-line--bottom {
+        top: 30rem;
+    }
+
+    &__nav-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 20rem;
+    }
+
+    &__btn-container {
+        display: flex;
+        gap: 32rem;
+    }
+
+    &__nav-item {
+        position: relative;
+
+        &:hover .header__drop-down {
+            max-height: 2000rem;
+        }
+
+        & .link {
+            font: $link-fonts;
+            color: $color-black;
+            display: flex;
+            gap: 4rem;
+            transition: transform 0.6s;
+
+            &__:hover {
+                color: $color-orange;
+            }
+
+            &__:hover .link--arrow {
+                transform: scaleY(1);
+            }
+        }
+    }
+
+    &__drop-down {
+        position: absolute;
+        background: $color-white;
+        width: 100%;
+        contain: paint;
+        display: flex;
+        flex-direction: column;
+        gap: 10rem;
+        max-height: 0;
+        transition: max-height 0.5s;
+    }
+}
+
+.link--arrow {
+    transform: scaleY(-1);
+    width: 15rem;
+    height: 20rem;
+    display: block;
+    transition: transform 0.6s;
+}

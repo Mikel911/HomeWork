@@ -1,0 +1,30 @@
+// Reset
+@import './global/reset.scss';
+
+
+//Variable
+@import './variable/colors';
+@import './variable/fonts';
+@import './variable/spacing';
+
+
+//General style
+@import './global/generel.scss';
+
+
+//Header 
+@import './components/buttons.scss';
+@import './components/modal.scss';
+@import './global/header.scss';
+
+
+//Hero
+@import './global/hero.scss';
+
+
+//Product
+@import './global/product.scss';
+
+
+//Mediascreen
+@import './variable/mediascreen';
