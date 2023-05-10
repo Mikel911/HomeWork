@@ -59,7 +59,9 @@
         &__btn-container {
             display: none;
         }
+    }
 
+    .hero {
         &__img {
             max-width: 414rem;
             transform: translateY(-51%);
@@ -89,6 +91,11 @@
 //mobail
 
 @media (max-width: 767px) {
+    .btn {
+        margin: 0 auto;
+        width: 100%;
+    }
+
     .hero {
         &__container {
 
@@ -96,7 +103,6 @@
         }
 
         &__img {
-
             position: static;
             max-width: 100%;
             transform: none;
@@ -116,12 +122,6 @@
             max-width: 100%;
 
         }
-    }
-
-
-    .btn {
-        margin: 0 auto;
-        width: 100%;
     }
 
     .product {
