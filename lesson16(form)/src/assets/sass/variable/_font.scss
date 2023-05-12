@@ -1,0 +1,10 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@400;500&display=swap');
+
+
+$first-fonts: 'Roboto', sans-serif;
+$second-fonts: 'Inter', sans-serif;
+
+$title-fonts: 500 24rem/32re $first-fonts;
+$main-fonts: 400 15rem/22rem $first-fonts;
+$bottom-text-fonts: 400 13rem/18rem $first-fonts;
