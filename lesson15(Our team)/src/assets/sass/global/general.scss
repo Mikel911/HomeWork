@@ -1,0 +1,16 @@
+// General style
+
+html {
+    font-size: 1px;
+}
+
+body {
+    font: $content-text-fonts;
+    color: $color-black;
+}
+
+.container {
+    max-width: 1190rem;
+    margin: 0 auto;
+    padding: 0 10rem;
+}

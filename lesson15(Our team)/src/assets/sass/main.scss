@@ -1,0 +1,18 @@
+// Reset 
+@import './components/reset.scss';
+
+
+// Variable
+@import './variable/variable';
+
+
+//General style
+@import './global/general.scss';
+
+
+//Components
+@import './components/index.scss';
+
+
+//media screen
+@import './components/mediascreen';

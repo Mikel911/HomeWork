@@ -1,0 +1,21 @@
+// Media screen
+
+@media (max-width: 768px) {
+    .team {
+        &__sub-title {
+            font-size: 16rem;
+            margin-bottom: 0;
+        }
+
+        &__title {
+            font-size: 40rem;
+            margin-bottom: 0;
+        }
+
+        &__content {
+            &__border {
+                display: none;
+            }
+        }
+    }
+}

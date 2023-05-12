@@ -1,0 +1,20 @@
+// Import fonts 
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@400;500&family=Roboto:wght@900&display=swap');
+
+
+
+//fonts
+$main-fonts: 'Raleway', sans-serif;
+$second-fonts: 'Roboto', sans-serif;
+$third-fonts: 'Open Sans', sans-serif;
+
+
+//varibale fonts
+
+$main-title-fonts: 900 60rem/66rem $second-fonts;
+$main-subtitle-fonts: 500 18rem/24rem $main-fonts;
+$content-title-fonts: 900 36rem/42rem $second-fonts;
+$content-subtitle-fonts: 400 24rem/36rem $main-fonts;
+$content-text-fonts: 500 14rem/24rem $main-fonts;
+$content-link-fonts: 500 14rem/14rem $third-fonts;
