@@ -18,6 +18,26 @@
         margin-bottom: 20px;
         font: $title-fonts;
     }
+
+    &__link {
+        display: inline-block;
+        margin-left: 20px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    &__text {
+        text-align: center;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+    }
 }
 
 
@@ -26,6 +46,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     font: $main-fonts;
+    margin-bottom: 20px;
 
     & input {
         height: 38px;
