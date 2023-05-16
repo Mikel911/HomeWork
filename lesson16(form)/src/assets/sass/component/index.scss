@@ -1,6 +1,8 @@
-.forms {
+.forms,
+.profile {
     height: 100vh;
     background-color: $color-bg;
+
 }
 
 .create {
@@ -40,6 +42,10 @@
     }
 }
 
+input,
+select {
+    outline-color: $color-blue;
+}
 
 .form {
     display: grid;
@@ -51,18 +57,15 @@
     & input {
         height: 38px;
         border-radius: 6px;
-        border: 1px solid $color-red;
+        border: 1px solid $color-lightgrey;
         padding: 8px;
     }
 
     & select {
         height: 38px;
         border-radius: 6px;
-        border: 1px solid $color-red;
-        color: #545454;
-        font-weight: 400;
-        font-size: 15px;
-        line-height: 22px;
+        border: 1px solid $color-lightgrey;
+        color: $color-greylink;
     }
 
     &__mail {
@@ -70,7 +73,7 @@
     }
 
     &__mail-descr {
-        color: #969696;
+        color: $color-greylink;
         font-weight: 400;
         font-size: 13px;
         line-height: 18px;
@@ -112,7 +115,7 @@
         font-weight: 400;
         font-size: 13px;
         line-height: 18px;
-        color: #969696;
+        color: $color-greylink;
         max-width: 410px;
         margin: 0 auto;
     }
