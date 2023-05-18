@@ -1,0 +1,95 @@
+.header {
+    padding: 23px 10px;
+}
+
+
+.hero {
+    border-top: 1px solid $color-1;
+    padding: 100px 10px;
+
+    &__subtitle {
+        font: $subtitle-fonts;
+        color: $color-7;
+        margin-bottom: 15px;
+    }
+
+    &__title {
+        margin-bottom: 40px;
+    }
+
+    &__row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+
+        @media (max-width: 1024px) {
+            flex-wrap: wrap;
+        }
+    }
+
+    &__card {
+        max-width: 370px;
+        padding: 40px;
+        border-radius: 8px;
+        border: 1px solid $color-3;
+
+        &:hover .card-hover {
+            fill: $color-2;
+        }
+
+        &:hover {
+            border: 1px solid $color-4;
+        }
+    }
+
+    &__card-icon {
+        margin-bottom: 30px;
+    }
+
+    &__card-title {
+        margin-bottom: 15px;
+        font: $card-title-fonts;
+        color: $color-6;
+    }
+
+    &__card-text {
+        margin-bottom: 30px;
+        font: $text-fonts;
+        color: $color-6;
+        max-width: 275px;
+    }
+
+    &__card-link {
+        font: $card-link-fonts;
+        color: $color-4;
+    }
+
+}
+
+
+.footer {
+    padding: 40px 10px;
+    background-color: $color-6;
+
+    &__logo {
+        margin-bottom: 40px;
+    }
+
+    &__logo-text {
+        color: $color-1;
+    }
+
+    &__social-row {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    &__social-link {
+        &:hover .icon--hover {
+            fill: $color-4;
+        }
+    }
+}

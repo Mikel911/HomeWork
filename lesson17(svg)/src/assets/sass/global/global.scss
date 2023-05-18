@@ -1,0 +1,25 @@
+.container {
+    max-width: 1190px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.logo {
+    display: flex;
+    gap: 13px;
+    align-items: center;
+
+    &__icon {
+        width: 30px;
+    }
+
+    &__text {
+        font: $logo-fonts;
+    }
+
+}
+
+.title {
+    font: $title-fonts;
+    color: $color-6;
+}
